@@ -3,19 +3,25 @@
 
 <head>
     <meta charset=utf-8/>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 
 <body>
 
     <h1>ic-07 - Intro to JavaScript</h1>
 
-    <button type="button">Button 1</button>
+    <button type="button" id="Button1" onclick="button1Clicked('displayed_number')">Button 1</button>
 
     <div id="random_num">
-        When Button 1 is clicked, a random number should appear here. 
+        <p id="displayed_number"> _ </p>
     </div>
 
-</body>
 
+    <button type="button" id="Button2" onclick="button2Clicked('displayed_circle')">Button 2</button>
+    <svg height="200" width="200">
+        <circle id="displayed_circle" class="my_circle_green" cx="100" cy="100" r="90" fill="blue"/>
+    </svg>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
